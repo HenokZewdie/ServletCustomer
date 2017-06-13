@@ -40,7 +40,7 @@ public class Customer extends HttpServlet {
 			String message = null ;
 			
 			if(!rs.isBeforeFirst()){	
-				nextURL = "/insert.jsp";
+				nextURL = "/Insert.jsp";
 				request.setAttribute("message", message);
 				
 			}
