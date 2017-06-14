@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>${message}</p>
-<a href = "CustPrompt.html" > Search Again</a> <!-- ?data= "custName" -->
-<a href = "UpdateCustomer.jsp" > Update</a>
+<form action="SearchCustomer" method = "post">
+${message}
+<br>Enter ID<input type = "text" name = "custID" id= "CUStTID">
+<input type = "submit" value = "Search">
 
 
-<h1>:)</h1>
+</form>
 </body>
 </html>

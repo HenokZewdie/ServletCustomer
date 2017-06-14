@@ -25,13 +25,14 @@ public class Delete extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver"); 
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Customer","root","password"); 
 			PreparedStatement preparedStmt = null;
-			String Deletequery = (" Delete FROM CustInfo WHERE FirstName = ?");
+			String Deletequery = (" Delete FROM CustInfo WHERE FullName = ?");
 			preparedStmt= con.prepareStatement(Deletequery); 
 			preparedStmt.setString(1, FullName);
 			preparedStmt.executeUpdate();
 			PrintWriter out = response.getWriter();
 
-			out.println(FullName + "  is now Deleted");
+			//out.println(FullName + "  is now Deleted");
+			request.setAttribute("message", FullName + "  is now Deleted");
 			
 			String nextURL = "/Display.jsp";
 			getServletContext().getRequestDispatcher(nextURL).forward(request,response);
