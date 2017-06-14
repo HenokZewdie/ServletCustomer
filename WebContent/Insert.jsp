@@ -8,16 +8,52 @@
 </head>
 <body>
 <form action="InsertToDB" method = "post">
-Title<input type = "text" name = "Title"">
-<br>First Name<input type = "text" name = "FName" >
-<br>Last Name<input type = "text" name = "LName">
-<br>Street<input type = "text" name = "Street">
-<br>ZIP Code<input type = "text" name = "ZIP" >
-<br>City<input type = "text" name = "City">
-<br>State<input type = "text" name = "State">
-<br>Email<input type = "text" name = "Email" >
-<br>Duty<input type = "text" name = "Duty">
-<br>Company<input type = "text" name = "Company">
+<h4>${name} is not in the database</h4>
+<table> 
+ <TR>
+      <TD>Title</TD>
+      <TD><input type = "text" name = "Title"></TD>
+  </TR>
+ <TR>
+      <TD>First Name</TD>
+      <TD><input type = "text" name = "FName" ></TD>
+  </TR>
+ <TR>
+      <TD>Last Name</TD>
+      <TD><input type = "text" name = "LName" ></TD>
+  </TR>
+ <TR>
+      <TD>Street</TD>
+      <TD><input type = "text" name = "Street" ></TD>
+  </TR>
+ <TR>
+      <TD>ZIP Code</TD>
+      <TD><input type = "text" name = "ZIP" ></TD>
+  </TR>
+ <TR>
+      <TD>City</TD>
+      <TD><input type = "text" name = "City" ></TD>
+  </TR>
+ <TR>
+      <TD>State</TD>
+      <TD><input type = "text" name = "State" ></TD>
+  </TR>
+
+ <TR>
+      <TD>Email</TD>
+      <TD><input type = "text" name = "Email" ></TD>
+  </TR>
+ <TR>
+      <TD>Duty</TD>
+      <TD><input type = "text" name = "Duty" ></TD>
+  </TR>
+ <TR>
+      <TD>Company</TD>
+      <TD><input type = "text" name = "Company" ></TD>
+  </TR>
+
+</table>
+
 
 <br><input type = "submit" value = "Register Customer">
 </form>

@@ -53,8 +53,8 @@ public class Customer extends HttpServlet {
 
 			}
 			int counter = 0;
-			String message1 = "";
-			PrintWriter out = response.getWriter();
+			
+			//PrintWriter out = response.getWriter();
 			while(rs.next()){
 				counter++;
 				//out.println();

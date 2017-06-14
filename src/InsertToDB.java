@@ -1,6 +1,7 @@
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -58,6 +59,8 @@ public class InsertToDB extends HttpServlet {
 			preparedStmt.setString(11, Company);
 			preparedStmt.executeUpdate();
 		
+			PrintWriter out = response.getWriter();
+			out.println("The Data has Saved");
 	}catch (Exception e) {
 		// TODO: handle exception
 	}
